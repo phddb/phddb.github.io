@@ -31,7 +31,7 @@ minima:
   social_links:
     facebook: 'd.h.benson'
     stackoverflow: '765287'
-    linkedin: drdb
+    linkedin: 'drdb'
 
 
 
@@ -42,7 +42,7 @@ plugins:
 
 #header_pages: ~
 
-google_analytics: G-0Z8JQBSCWB
+google_analytics: 'G-0Z8JQBSCWB'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
