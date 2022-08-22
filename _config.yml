@@ -41,7 +41,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
-#header_pages: ~
+header_pages:
+  - about
 
 google_analytics: G-0Z8JQBSCWB
 
