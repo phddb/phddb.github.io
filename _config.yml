@@ -42,7 +42,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - about
+  - about.markdown
 
 google_analytics: G-0Z8JQBSCWB
 
