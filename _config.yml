@@ -36,14 +36,10 @@ minima:
 
 
 # Build settings
-#theme: minima
-
-# to get google analytics working: https://github.com/jekyll/minima/issues/561, also add remote-theme below
-remote_theme: jekyll/minima
+theme: minima
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 #header_pages: ~
 
