@@ -12,4 +12,4 @@ order: 1
     
 
 
-<a href="https://virb.herokuapp.com/">![webtet](images/virb.png)</a>  [VIRB](https://virb.herokuapp.com/) (Visual Impulse Response Browser)
+<a href="https://virb.herokuapp.com/">![webtet](images/virb.png)</a>  [VIRB](https://virb.herokuapp.com/) (Visual Impulse Response Browser)   [dissertation](/images/DHB_dissertation.pdf)
