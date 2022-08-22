@@ -1,0 +1,48 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+#project-list p {
+  display: inline-block;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+#project-list .small-image img {
+  float: left;
+  width: 200px;
+  margin-right: 3em;
+  padding-left: 25px;
+  padding-right: 25px
+}
+
+#project-list img {
+  float: left;
+  width: 250px;
+  margin-right: 3em;
+}
+
+ul.social-media-list > li {
+  display: inline-block;
+}
+
+img.email-svg {
+  height: 1.35em;
+  vertical-align: text-bottom;
+}
+
+
+ul.social-media-list {
+  float: right;
+}
+
+.social-media-list > li {
+  float: left;
+  padding-left: 3em;
+}
+
+.site-footer {
+  padding: 0px;
+}
