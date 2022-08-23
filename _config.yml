@@ -21,7 +21,7 @@
 title: Dave Benson's online portfolio
 email: davehbenson.ca@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Dave Benson's online portfolio
+  Dave Benson's portfolio
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://davebenson.ca" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -45,7 +45,7 @@ header_pages:
   - index.markdown
   - about.markdown
 
-google_analytics: G-0Z8JQBSCWB
+#google_analytics: G-0Z8JQBSCWB
 
 # Exclude from processing.
 # The following items will not be processed, by default.
