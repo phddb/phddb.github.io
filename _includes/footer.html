@@ -126,4 +126,21 @@
 
   </div>
 
+
+
+  <!-- appends query string to virb link -->
+  <script>
+
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    
+    if (params.u) {
+      const nodes = document.querySelectorAll('.add-u')
+      nodes.forEach(n => n.setAttribute('href', 'https://virb.herokuapp.com/?u=' + params.u))
+      console.log("changed url for nodes",nodes);
+    }
+
+  </script>
+
 </footer>

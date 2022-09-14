@@ -12,4 +12,4 @@ order: 1
     
 
 
-<a href="https://virb.herokuapp.com/">![webtet](images/virb.png)</a>  [VIRB](https://virb.herokuapp.com/) (Visual Impulse Response Browser) is a graphical search interface for collections of virtual acoustic spaces. Each space is displayed as an icon whose visual properties (e.g. colour, size, distance) reflect its acoustic properties (e.g. brilliance, reverberance, clarity). It builds on research reported in my [dissertation](/images/DHB_dissertation.pdf).
+<a href="https://virb.herokuapp.com/" class="add-u"><img src="images/virb.png" alt="virb"/> </a>  <a href="https://virb.herokuapp.com/" class="add-u">VIRB</a> (Visual Impulse Response Browser) is a graphical search interface for collections of virtual acoustic spaces. Each space is displayed as an icon whose visual properties (e.g. colour, size, distance) reflect its acoustic properties (e.g. brilliance, reverberance, clarity). It builds on research reported in my [dissertation](/images/DHB_dissertation.pdf).
