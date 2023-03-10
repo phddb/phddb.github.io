@@ -1,3 +1,3 @@
 # phddb.github.io
 
-My personal/portfolio website, hosted on github pages.
+My personal/portfolio website: davebenson.ca
