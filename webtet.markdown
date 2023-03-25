@@ -7,7 +7,7 @@ permalink: /webtet/
 ---
 
 
-[WebTET](http://webtet.net) (Web-based Technical Ear Trainer) is an online platform for teaching critical listening skills to sound engineers. The student-facing side of the platform, freely accessible at [webtet.net](http://webtet.net), allows engineers to practice aurally identifying control parameters for popular audio effects such as dynamics compression and parametric equalization.  The institutional side of the platform, which is currently in a private beta release, allows instructors to create exercises and exams for students and allows them to track their students' progress on these tasks. 
+[WebTET](http://webtet.net) (Web-based Technical Ear Trainer) is an online platform for teaching critical listening skills to sound engineers. The student-facing side of the platform, freely accessible at [webtet.net](http://webtet.net), allows engineers to practice aurally identifying control parameters for popular audio effects. The institutional side of the platform, currently in a private beta release, allows instructors to create exercises and exams and track their students' progress on these tasks. 
 
 
 Student-facing site: dynamics compression page
