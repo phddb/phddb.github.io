@@ -42,7 +42,7 @@
       // so many more properties
 
       let log_machine_url = "107.159.213.6:1338"
-      fetch("http://"+log_machine_url+"/visits.json", {
+      fetch("https://"+log_machine_url+"/visits.json", {
         method: "POST",
         body: JSON.stringify({
           query_string: search_params.u,
