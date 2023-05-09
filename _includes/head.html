@@ -34,12 +34,6 @@
 
     let apiKey = '7ef80788ecafc4ddaf903e89ee9e040c15aa804c10c3b3678e1b9d2b';
     json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
-      console.log(data.ip);
-      console.log(data.city);
-      console.log(data.country_code);
-      console.log(data)
-      console.log("u?=",params.u)
-      // so many more properties
 
       let log_machine_url = "107.159.213.6:1338"
       fetch("https://"+log_machine_url+"/visits.json", {
