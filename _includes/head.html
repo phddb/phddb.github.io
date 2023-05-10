@@ -35,7 +35,7 @@
     let apiKey = '7ef80788ecafc4ddaf903e89ee9e040c15aa804c10c3b3678e1b9d2b';
     json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
 
-      let log_machine_url = "107.159.213.6:1338"
+      let log_machine_url = "visitors.herokuapp.com"
       fetch("https://"+log_machine_url+"/visits.json", {
         method: "POST",
         body: JSON.stringify({
