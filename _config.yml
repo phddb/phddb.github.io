@@ -29,6 +29,7 @@ github_username:  phddb
 #linkedin_username: drdb
 minima:
   social_links:
+    github: 'phddb'
     facebook: 'd.h.benson'
     stackoverflow: '765287'
     linkedin: 'drdb'
