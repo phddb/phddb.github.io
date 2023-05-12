@@ -31,28 +31,18 @@
     // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
     //let value = params.some_key; // "some_value"
 
-
-    let apiKey = '7ef80788ecafc4ddaf903e89ee9e040c15aa804c10c3b3678e1b9d2b';
-    json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
-
-      let log_machine_url = "visitors.herokuapp.com"
-      fetch("https://"+log_machine_url+"/visits.json", {
-        method: "POST",
-        body: JSON.stringify({
-          query_string: search_params.u,
-          ip: data.ip,
-          city: data.city,
-          country_code: data.country_code,
-          data: data
-        }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8"
-        }
-      });
-
-
-
+    let log_machine_url = "visitors.herokuapp.com"
+    fetch("https://"+log_machine_url+"/visits.json", {
+      method: "POST",
+      body: JSON.stringify({
+        query_string: window.location.search,
+        u: search_params.u
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
     });
+
   </script>
 
 </head>
