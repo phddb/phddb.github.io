@@ -136,9 +136,10 @@
     });
     
     if (params.u) {
-      const nodes = document.querySelectorAll('.add-u')
-      nodes.forEach(n => n.setAttribute('href', 'https://virb.herokuapp.com/?u=' + params.u))
-      console.log("changed url for nodes",nodes);
+      const nodes = document.querySelectorAll('a')
+      nodes.forEach(n => console.log("node pre : "+n.href))
+      nodes.forEach(n => n.setAttribute('href', n.href + '?u=' + params.u))
+      nodes.forEach(n => console.log("node post: " + n.href))
     }
 
   </script>
