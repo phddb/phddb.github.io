@@ -36,7 +36,8 @@
       method: "POST",
       body: JSON.stringify({
         query_string: window.location.search,
-        u: search_params.u
+        u: search_params.u,
+        window_location: window.location
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
