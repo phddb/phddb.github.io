@@ -1,67 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ " /assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-  {%- include google-analytics.html -%}
-  {%- endif -%}
-
-  <!-- Google tag (gtag.js) added manually by dave -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z8JQBSCWB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8JXRLL3V59');
-  </script>
-
-
-  <script>
-    function json(url) {
-      return fetch(url).then(res => res.json());
-    }
-
-    const search_params = new Proxy(new URLSearchParams(window.location.search), {
-      get: (searchParams, prop) => searchParams.get(prop),
-    });
-    // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
-    //let value = params.some_key; // "some_value"
-
-    let log_machine_url = "visitors.herokuapp.com"
-    fetch("https://" + log_machine_url + "/visits.json", {
-      method: "POST",
-      body: JSON.stringify({
-        query_string: window.location.search,
-        u: search_params.u,
-        window_location: window.location
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
-    });
-
-  </script>
-
-
-  <meta http-equiv="refresh" content="0; url=https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR" />
-
-
-</head>
+{%- include head.html -%}
 
 <body>
+
+  {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       {{ content }}
     </div>
   </main>
+
+  <meta http-equiv="refresh"
+    content="0; url=https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR" />
+
+  {%- include footer.html -%}
 
 </body>
 
