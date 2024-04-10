@@ -2,7 +2,7 @@
 layout: bachfestival
 title: Video pour Festival Bach Montreal
 order: 1
-permalink: /festivalbach/
+permalink: /festival-bach-audition-video/
 
 ---
 
