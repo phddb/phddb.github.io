@@ -4,8 +4,24 @@
 {%- include head.html -%}
 
 <body>
+  <script>
+    fetch("https://" + log_machine_url + "/visits.json", {
+      method: "POST",
+      body: JSON.stringify({
+        query_string: window.location.search,
+        u: "festival-bach-audition-video",
+        window_location: window.location
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    }).then(()=> 
+      window.location.href="https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR"
+    );
 
+  </script>
   {%- include header.html -%}
+
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
@@ -13,8 +29,8 @@
     </div>
   </main>
 
-  <meta http-equiv="refresh"
-    content="0; url=https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR" />
+  <!-- <meta http-equiv="refresh"
+    content="0; url=https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR" /> -->
 
   {%- include footer.html -%}
 
