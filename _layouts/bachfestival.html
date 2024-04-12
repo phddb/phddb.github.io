@@ -15,8 +15,12 @@
       headers: {
         "Content-type": "application/json; charset=UTF-8"
       }
-    }).then(()=> 
-      window.location.href="https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR"
+    }).then(()=>{
+      const redir = function(){
+        window.location.href = "https://photos.google.com/share/AF1QipMS7nooyveJrJ8SaUeCTPdOaKxs3Ru6dV-MGa6Car_2-UISqEz30z3eMt7jlx7EAg?key=MEhQOHdPemtoVm51TlhaUDFmN05XNm41akRTTFRR"
+      };
+      setTimeout(redir,0);
+      }
     );
 
   </script>
